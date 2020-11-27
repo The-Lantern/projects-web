@@ -16,4 +16,4 @@ Some things to keep in mind:
 
 ## Template Summaries
 
-**bold** Template 1 — Fullwidth cover image with headline/subheadline overlay **/bold**
+**Template 1** — Fullwidth cover image with headline/subheadline overlay
