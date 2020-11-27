@@ -16,3 +16,5 @@ Some things to keep in mind:
 ## Template Summaries
 
 **Template 1** — Fullwidth cover image with headline/subheadline overlay
+
+View Template 1 [here.](https://the-lantern.github.io/projects-web/projects/template1.html)
