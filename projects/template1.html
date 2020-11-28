@@ -23,7 +23,7 @@
 		<link href="../css/lanternProjects.css" rel="stylesheet">
 		
 		<!-- Title and Social Meta -->
-		<title>Short Project Name | The Lantern</title>
+		<title>Title | The Lantern</title>
 		
 			<!-- Facebook / Feature -->
 			<meta property="og:title" content="#">
@@ -52,39 +52,23 @@
       		}
 			
 		</style>
-
+		
+		<!-- JS for universal nav and footer -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>  
+			$(function(){ 
+			  $("#header").load("../nav.html");  
+			  $("#footer").load("../footer.html");  
+			}); 
+		</script>
 	</head>
 	
 	<body>
 		
+		<div id="header"></div>
+		
 		<!-- Cover Image w/ Headline and Nav Bar -->
 		<div class="fullheight-cover">
-			
-			<!-- Navigation Bar -->
-			<nav class="navbar bg-light fixed-top navbar-expand-lg">
-				
-				<!-- Lantern Logo -->
-				<a class="navbar-brand" href="https://www.thelantern.com/">
-					<img width="200px" src="https://cpb-us-e1.wpmucdn.com/www.thelantern.com/dist/c/1/files/2019/05/NewLanternHeader.png" alt="Lantern logo">
-				</a>
-				
-				<!-- Hamburger menu for smaller screens -->
-				<button class="navbar-toggler hamburger-menu" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-			 	</button>
-				
-				<!-- Nav items -->
-			  	<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Features</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
 			
 			<!-- Cover Image and Headline -->
 			<div class="container">
@@ -92,9 +76,9 @@
 					<div class="col-md-10 title">
 						<div class="centerme">
 							<div>
-								<h1 class="headline">Treasures and Troubles of the Tetrapod Collection</h1>
+								<h1 class="headline">[HEADLINE]</h1>
 								<hr style="border-top:3px solid white; width:20%;">
-								<h3 class="subheadline"><span>Tucked away in cabinets and on shelves, thousands of birds, amphibians, mammals and reptiles are witnesses to global climate change at a museum in desperate need of money.</span></h3>
+								<h3 class="subheadline"><span>[SUBHEADLINE]</span></h3>
 							</div>
 						</div>
 					</div>
@@ -114,45 +98,35 @@
 					<!-- Bylines -->
 					<div class="col-md-3">
 						<div class="bylines">
-							<p class="byline-date">Published Oct. 21, 2019</p>
+							<p class="byline-date">Published [DATE]</p>
 							<hr>
 							
 							<!-- Author Byline -->
-							<p class="byline">Words by Jack Long</p>
-							<p class="subline">
-								<a class="byline-link" href="mailto:#" target="_blank">ME for Digital Content</a> | 
-								<a class="byline-link" href="#" target="_blank">@jack_long_</a>
-							</p>
+							<p class="byline">Words by [BYLINE]</p>
+							<p class="subline">[TITLE] | <a class="byline-link" href="#" target="_blank">[@TWITTER_USER]</a></p>
 							
 							<!-- Photography/Graphics Byline -->
-							<p class="byline">Photography by Jack Long</p>
-							<p class="subline">
-								ME for Digital Content | 
-								<a class="byline-link" href="#" target="_blank">@jack_long_</a>
-							</p>
+							<p class="byline">Words by [BYLINE]</p>
+							<p class="subline">[TITLE] | <a class="byline-link" href="#" target="_blank">[@TWITTER_USER]</a></p>
 							
 							<!-- Web Design Byline -->
-							<p class="byline">Web Design by Jack Long</p>
-							<p class="subline">
-								ME for Digital Content | 
-								<a class="byline-link" href="#" target="_blank">@jack_long_</a>
-							</p>
+							<p class="byline">Words by [BYLINE]</p>
+							<p class="subline">[TITLE] | <a class="byline-link" href="#" target="_blank">[@TWITTER_USER]</a></p>
 						</div>
 					</div>
 
 					<!-- Text -->
 					<div class="col-md-7 article-text">
 						
-						<p><span class="dropcap">R</span>iding his bike early in the morning, Grant Terrell keeps his eyes low to the ground, looking for dark silhouettes lying still on the pavement. Overnight, birds blinded by light crash into buildings across campus and lie dead, ready for Terrell to collect them.</p>
-						<p>“They’re often these really pretty, exotic-looking, new tropical warblers,” Terrell said.</p>
-						
-						<p>Terrell, a fifth-year in evolutionary ecology and history, is a curatorial assistant at Ohio State’s Tetrapod Collection, a museum for four-limbed vertebrates within the university’s Museum of Biological Diversity located at 1315 Kinnear Road.</p>
+						<p><span class="dropcap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod mattis nisl, et pharetra turpis consectetur sit amet. Fusce bibendum tempus ligula, at interdum ex aliquam vel. Aliquam justo nibh, aliquam vel sollicitudin eu, egestas quis ante. Pellentesque varius tellus eu enim lobortis semper. Mauris sit amet libero neque. Quisque gravida vulputate elit nec rutrum. Ut dapibus eget ex id vestibulum. Nullam at imperdiet risus, eget accumsan felis. Vivamus eu vulputate nunc. Aliquam dolor enim, congue vitae sapien sed, aliquet gravida nulla.</p>
 
-						<p>The Tetrapod Collection holds tens of thousands of specimens, Terrell said. Preserved in an alcohol solution, amphibians and reptiles line rows of shelves. The skins, skulls and bones of mammals hang on the walls or are kept in metal cabinets. Small birds, such as thrushes and warblers, lie wing to wing, while storks, vultures and cassowaries fill entire shelves.</p>
+						<p>Nulla et mollis diam. Donec ac elit eu leo feugiat elementum sit amet eget est. Phasellus ac felis malesuada, consequat ipsum eu, molestie libero. Integer lobortis ante lectus, ut pulvinar massa vulputate in. Aenean finibus pretium sapien, vitae mattis neque tempus et. Integer sit amet posuere tortor. Maecenas sed vehicula nulla, ut suscipit urna. Maecenas blandit tincidunt eleifend. Nam feugiat semper placerat. Vivamus enim libero, blandit eget semper ut, commodo sed arcu. Proin ultrices, nunc eu vestibulum bibendum, justo dolor pulvinar ipsum, ac molestie tortor urna nec lectus. Nullam vitae lectus leo. Morbi feugiat lacus a arcu elementum, quis ultrices velit suscipit.</p>
 
-						<p>Some specimens — not kept in closed cabinets — must be covered in plastic because the roof and sprinkler system leak. Funding for a collection like this is tight, Tamaki Yuri, curator at the museum, said.</p>
+						<p>Curabitur magna justo, facilisis eu faucibus porta, dignissim eget purus. Curabitur egestas mauris quis risus rutrum, in vehicula enim rutrum. Sed et tortor sapien. Etiam imperdiet ligula vel ligula tristique efficitur. Sed tempus lacus arcu, sed porta ligula vulputate sed. Maecenas auctor mi ipsum, non cursus nulla placerat non. Nulla convallis, ante ac rutrum dapibus, lorem mauris malesuada dolor, ac lacinia leo diam nec mauris.</p>
 
-						<p>“We put in a lot of money to collect all these things and then preserve these things,” she said.</p>
+						<p>Maecenas luctus metus et mollis maximus. Integer eu metus fringilla dolor egestas egestas nec vitae mauris. Quisque sit amet mi semper, malesuada elit ut, sagittis odio. Suspendisse vel orci ac tellus aliquam imperdiet a et sem. Maecenas tempus, lorem a dictum pharetra, urna diam sodales mi, interdum venenatis lorem tellus non arcu. Mauris eget maximus lectus, id pulvinar nisi. In accumsan blandit nulla vitae sagittis. Fusce auctor sem in eros vestibulum, quis auctor quam porta. Nunc leo velit, feugiat nec nisl id, blandit tempor enim. Sed euismod nibh nec aliquet cursus. Vestibulum volutpat ornare leo et sollicitudin. Pellentesque vel neque in arcu mollis vulputate non sed odio. Mauris condimentum dictum ultrices.</p>
+
+						<p>Etiam id elementum urna. Quisque ut molestie elit. Nunc eu lorem id magna tempus consectetur ut quis odio. In hac habitasse platea dictumst. Sed et efficitur tortor. Maecenas fermentum laoreet tellus vitae cursus. Etiam consequat massa tellus, sed blandit erat elementum id. In efficitur pellentesque augue, at vehicula diam tempus id. Suspendisse laoreet tellus libero, nec fermentum tortor sollicitudin non. Duis sollicitudin lectus eros, vel tempus velit facilisis vel. Sed sem libero, vulputate sit amet augue ac, cursus convallis ligula. Nulla volutpat luctus elit. Maecenas congue elit non eros tempor imperdiet.</p>
 						
 					</div>
 				</div>
@@ -268,6 +242,19 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed --> 
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap-4.4.1.js"></script>
+		
+		<!-- JS for Navbar and footer injection -->
+		<script>
+		    $(document).ready(function () {
+		        $("div[data-includeHTML]").each(function () {                
+		            $(this).load($(this).attr("data-includeHTML"));
+		        });
+		    });
+		</script>
+		
+		<!-- Universal Footer -->
+		<div id="footer"></div>
+		
 	</body>
 	
 	<footer class="footer">
