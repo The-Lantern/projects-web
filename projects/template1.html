@@ -57,15 +57,16 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>  
 			$(function(){ 
-			  $("#header").load("../nav.html");  
-			  $("#footer").load("../footer.html");  
+			  $("#univ-nav").load("../nav.html");  
+			  $("#univ-footer").load("../footer.html");  
 			}); 
 		</script>
 	</head>
 	
 	<body>
 		
-		<div id="header"></div>
+		<!-- Universal Navbar-->
+		<div id="univ-nav"></div>
 		
 		<!-- Cover Image w/ Headline and Nav Bar -->
 		<div class="fullheight-cover">
@@ -233,9 +234,11 @@
 					</div>
 				</div>
 			</div>
-		
-		
 		</div>
+		
+		<!-- Universal Footer -->
+		<div id="univ-footer"></div>
+		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 		<script src="js/jquery-3.4.1.min.js"></script>
 
@@ -251,9 +254,6 @@
 		        });
 		    });
 		</script>
-		
-		<!-- Universal Footer -->
-		<div id="footer"></div>
 		
 	</body>
 </html>
