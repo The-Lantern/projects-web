@@ -1,0 +1,62 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* nav bar  */
+.nav{
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-decoration: none;
+    padding-top: 5px;
+    width: 100vw;
+}
+#nav-BB{
+    text-align: left;
+    padding-right: 30vw;
+}
+#nav-Lantern{
+    text-align: right;
+    padding-left: 30vw;
+}
+#nav-BV{
+    text-align: center;
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+.nav li {
+    display: inline-block;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.nav a{
+    text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+    .navb li {
+      float: none;
+      display: block;
+      width: 100%;
+    }
+}
+
+/* flex box housing posts */
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+
+/* posts  */
+.post{
+    justify-content: center;
+    align-items: center;
+}
